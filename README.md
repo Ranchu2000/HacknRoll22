@@ -6,6 +6,3 @@
 #sources of information could be more broadly sourced- not just Google News but also other news outlets as well as perhaps the first paragraph of the article could be incorportated
 #use ml to classifiy similar issues? reptition count?
 #alert for super polarizing news
-
-#set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\yufei\OneDrive - Nanyang Technological University\Backup\Desktop\Coding\Python\Web Scrapper\hacknroll22-nlp-e674a1942655.json
-#^run before execution to set up credentials for Google NLP
