@@ -91,7 +91,7 @@ while(True):
     hour=current.hour
     #hour=2
     df= process_data(headlines, links, rating, hour)
-    required_file = Path(os.path.join(ROOT_DIR, 'Data', 'mydata.json')+ stock +"_"+str(date)+".csv")
+    required_file = Path(os.path.join(ROOT_DIR, 'Data/')+ stock +"_"+str(date)+".csv")
     save_data(df)
     if (hour==23):
         #End of the day, time to review the data
@@ -108,7 +108,7 @@ while(True):
         plt.xlabel("Hour")
         plt.ylabel("Avg_Sentiment")
         plt.title(stock+"_"+str(date))
-        location = Path(os.path.join(ROOT_DIR, 'Data', 'mydata.json')+ stock +"_"+str(date)+'.png')
+        location = Path(os.path.join(ROOT_DIR, 'Data/')+ stock +"_"+str(date)+'.png')
         plt.savefig(location, dpi=300, bbox_inches='tight')
         #plt.show()
 
